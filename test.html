@@ -1,0 +1,133 @@
+<!doctype html>
+ <html>
+     <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width">
+         <title>Formulário Medicina Nuclear</title>
+         <link rel="stylesheet" href="css/bootstrap.css">
+         <link rel="stylesheet" href="css/open-iconic-bootstap.css"
+         <link rel="stylesheet" href="css/checkout.css"
+     </head>
+     <body>
+
+         <div class="jumbotron jumbotron-fluid">
+            <div class = "container">
+                 <h1>Formulário Medicina Nuclear</h1>
+                 <p>Leia com atenção os campos para preenchimento</p>
+            </div><!-- Fim do container dentro do jumbotron-->
+        </div><!-- Fim do jumbotron-->
+
+        <div class="container">
+           
+            <div class="row">
+                    
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <div class="card-header"
+                             <h2>Seu exame</h2>
+                        </div><!-- Fim do primeiro cardy-->
+
+                        <div class="card-body">
+                             <img src="img/logo.jpg" alt="Camiseta Ecko Caveira na cor verde"  class="img-thumbnail mb3"><!-- Imagem respeitando a dimensão do pai (img-thumbnail) e borda infeior (mb3)-->
+                                 <dl>
+                                     <dt>Tipo do exame</dt>
+                                     <dd>Cintilografia</dd>
+
+                                     <dt>Contraste</dt>
+                                     <dd>XXXX</dd>
+
+                                     <dt>Potencia</dt>
+                                     <dd>xxxxx</dd>
+
+                                     <dt>xxxxx</dt>
+                                     <dd>xxxxx</dd>
+                                 </dl>
+                        </div><!-- Fim do card body-->
+                
+
+                    </div>   <!-- Fim do card mb-3-->
+                
+                </div><!-- Fim do card md-4-->            
+
+            
+            
+                <form class="col-md-4"><!-- Inicio do formulário-->
+                    <fildset><!-- Criando dos campos do formulário (Dois sets)-->
+                        <legend>Dados Pessoais</legend>
+
+                        <div class="form-group">
+                            <label for="nome">Nome Completo</label>
+                            <input type="text" class="form-control" id="nome" name="nome" autofocus required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="peso">Peso</label>
+                            <input type="number" class="form-control" id="peso" name="peso" placeholder="00.00kg">
+                        </div>
+
+                        <div class="form-group"
+                            <label for="cpf">CPF</label>
+                            <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+                        </div>
+
+                        <div class="form group custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="newsletter" value ="sim" checked>
+                            <label class="custom-control-label" for="newsletter">Concordo com os dados preenchidos
+                            </label>
+                        
+                        </div>
+                    </fildset><!--Fechamento da primeira parte do formulário-->
+
+
+                    <fieldset>
+                        <legend>Dados clínicos</legend>
+                        
+                        <div class="form-group">
+                            <label for="idade">idade</label>
+                            <input type="text" class="form-control" id="idade" name="idade">
+                        </div>
+
+                         <div class="form-group">
+                            <label for="bandeira-cartao-1">Motivo do exame</label>
+                            <select class="custom-select" id="bandeira-cartao-1">
+                                <option disabled selected>Selecione uma opção...</option>
+                                <option value="assintomatico">Dor torácica</option>
+                                <option value="cansaço">Pós-SCA</option>
+                                <option value="sincope">Alteração do exame</option>
+                            </select><!--Fechando bandeira cartao-->
+                        </div><!-- Fechando a classe form-group-->
+
+
+                        <div class="form-group"><!--Original-->
+                            <label for="bandeira-cartao">HDA</label>
+                            <select class="custom-select" id="bandeira-cartao">
+                                <option disabled selected>Selecione uma opção...</option>
+                                <option value="assintomatico">Assintomático</option>
+                                <option value="cansaço">Cansaço</option>
+                                <option value="sincope">Síncope</option>
+                            </select><!--Fechando bandeira cartao-->
+                        </div><!-- Fechando a classe form-group-->
+
+
+                        <div class="form-group">
+                            <label for="validade-cartao">Data</label>
+                            <input type="month" class="form-control" id="validade-cartao" name="validade-cartao">
+                        </div>
+                    </fieldset><!-- Fechamento do da segunda parte do formulário-->
+
+                    <button type="submit" class="btn btn-primary mb-3">
+                        <span class="oi oi-thumb-up"></span>
+                        Confirma o envio dos dados
+                    </button>
+              
+
+                </form><!-- Fechamento do formulário-->
+            </div><!-- Fechamento do row-->
+
+
+
+
+        </div><!-- Fim do container-->
+
+     </body>
+ </html>
